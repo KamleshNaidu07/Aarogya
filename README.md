@@ -25,3 +25,38 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Tech Stack
+
+The Aarogya application is built using the following technologies and frameworks:
+
+- Angular CLI (v15.2.2)
+- Node.js
+- Express.js
+- MySQL
+
+## Features
+
+- Create, update, and delete patient records
+- Create, update, and delete doctor records
+- View all patients and doctors
+- Search for patients and doctors by name or ID
+- Integration with a MySQL database for data storage
+
+## Development Server
+
+To run the Aarogya application in a development environment, follow these steps:
+
+1. Clone the repository from GitHub: [Aarogya Repository](https://github.com/KamleshNaidu07/Aarogya.git)
+2. Navigate to the project directory.
+3. Run `npm install` to install the project dependencies.
+4. Configure the MySQL database connection in the `config/db.js` file.
+5. Run `npm run dev` to start the development server.
+6. Open your browser and navigate to `http://localhost:3000/` to access the application.
+
+Please note that you need to have Node.js and Angular CLI installed on your machine to run the application.
+
+## Build
+
+To build the Aarogya application, run the following command:
+
