@@ -36,3 +36,18 @@ CREATE TABLE appointments(
     FOREIGN KEY(doctor_id) REFERENCES doctors(id) ON DELETE CASCADE,
     FOREIGN KEY(patient_id) REFERENCES patients(id) ON DELETE CASCADE
 );
+
+-- for prescriptions table
+CREATE TABLE prescriptions (
+  id INT PRIMARY KEY AUTO_INCREMENT,
+  doctor_id INT,
+  patient_id INT,
+  prescription_date DATETIME,
+  medication VARCHAR(255),
+  dosage VARCHAR(255),
+  instructions TEXT,
+  created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+  updated_at DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  FOREIGN KEY (doctor_id) REFERENCES doctors(id),
+  FOREIGN KEY (patient_id) REFERENCES patients(id)
+);
